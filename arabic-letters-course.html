@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Arabic Letters and Sounds | Nur Al-Hikma</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Locomotive Scroll CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#91b250',
+                        secondary: '#606060',
+                        light: '#F9F7F3',
+                        dark: '#101010'
+                    },
+                    fontFamily: {
+                        arabic: ['Amiri', 'serif'],
+                        sans: ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-black font-sans text-dark">
+    <div id="main-content" data-scroll-container>
+    <!-- Header with Navigation -->
+    <header class="bg-dark/95 shadow-md fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 py-3">
+            <nav class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-arabic font-bold">
+                        <span class="text-primary">Nur</span>
+                        <span class="text-white">Al-Hikma</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-white font-medium hover:text-primary transition">Home</a>
+                    <a href="resources.html" class="text-white font-medium hover:text-primary transition">Resources</a>
+                    <a href="arabic-grammar.html" class="text-primary font-medium hover:text-white transition">Learn Arabic</a>
+                    <a href="#register" class="border border-primary px-6 py-2 text-white font-medium hover:text-primary transition flex items-center justify-center">Register Now</a>
+                </div>
+
+                <!-- Mobile Navigation Toggle -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white hover:text-primary">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </nav>
+
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="md:hidden hidden fixed inset-0 bg-dark bg-opacity-95 z-50">
+                <!-- Close button -->
+                <button id="mobile-menu-close" class="absolute top-6 right-6 text-white hover:text-primary">
+                    <i class="fas fa-times text-2xl"></i>
+                </button>
+
+                <!-- Menu content -->
+                <div class="flex flex-col items-center justify-center h-full w-full">
+                    <div class="flex flex-col items-center space-y-10 py-8">
+                        <a href="index.html" class="text-white text-2xl font-medium hover:text-primary transition">Home</a>
+                        <a href="resources.html" class="text-white text-2xl font-medium hover:text-primary transition">Resources</a>
+                        <a href="arabic-grammar.html" class="text-primary text-2xl font-medium hover:text-white transition">Learn Arabic</a>
+                        <a href="#register" class="text-white text-2xl font-medium hover:text-primary transition">Register Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Course Header -->
+    <section class="bg-primary pt-32 pb-16" data-scroll-section>
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col items-center justify-center text-center">
+                <span class="bg-white/20 text-white px-4 py-1 text-sm font-medium mb-4">Beginner Course</span>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
+                    Introduction to Arabic Letters and Sounds
+                </h1>
+                <div class="w-24 h-1 bg-white mb-8"></div>
+                <p class="text-xl text-white/80 max-w-2xl mb-8">
+                    Master the foundation of Arabic language by learning the alphabet, pronunciation, and basic sound patterns.
+                </p>
+                <div class="flex flex-wrap gap-4 justify-center">
+                    <a href="#course-content" class="bg-dark text-primary hover:bg-gray px-8 py-3 font-medium transition-all duration-300">
+                        Start Learning
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Overview -->
+    <section id="course-overview" class="py-20 bg-white" data-scroll-section>
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="flex items-center mb-12">
+                    <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mr-4">
+                        <i class="fas fa-info-circle text-primary text-xl"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold text-gray-800">Course Overview</h2>
+                </div>
+
+                <p class="text-gray-600 text-lg mb-8">
+                    This course is designed to introduce you to the Arabic alphabet and sound system, providing a solid foundation for your Arabic learning journey. By the end of this course, you'll be able to recognize, pronounce, and write all Arabic letters in their various forms.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                    <div class="bg-gray-50 p-6 border-l-4 border-primary">
+                        <h3 class="text-xl font-bold mb-3 text-primary">What You'll Learn</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-primary mt-1 mr-2"></i>
+                                <span>All 28 Arabic letters and their pronunciation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-primary mt-1 mr-2"></i>
+                                <span>Different forms of letters (initial, medial, final)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-primary mt-1 mr-2"></i>
+                                <span>Short and long vowels in Arabic</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-primary mt-1 mr-2"></i>
+                                <span>Basic reading and writing skills</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 border-l-4 border-primary">
+                        <h3 class="text-xl font-bold mb-3 text-primary">Course Details</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-clock text-primary mt-1 mr-2"></i>
+                                <span>Duration: 4 weeks</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-book text-primary mt-1 mr-2"></i>
+                                <span>8 comprehensive lessons</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-graduation-cap text-primary mt-1 mr-2"></i>
+                                <span>Suitable for complete beginners</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-certificate text-primary mt-1 mr-2"></i>
+                                <span>Certificate upon completion</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Content -->
+    <section id="course-content" class="py-8 bg-gray-50" data-scroll-section>
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="flex items-center mb-12">
+                    <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mr-4">
+                        <i class="fas fa-book-open text-primary text-xl"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold text-gray-800">Course Content</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lesson 1 -->
+    <section id="lesson1" class="py-4 bg-gray-50" data-scroll-section>
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white p-8 border border-gray-100 shadow-md mb-8">
+                    <div class="mb-8">
+                        <h3 class="text-2xl font-bold mb-4 text-primary">Lesson 1: Introduction to the Arabic Alphabet</h3>
+                        <p class="text-gray-700 mb-4">
+                            The Arabic alphabet consists of 28 letters, written from right to left. In this lesson, we'll introduce you to the basic characteristics of the Arabic writing system and begin exploring the first group of letters.
+                        </p>
+                    </div>
+
+                    <div class="mb-8 arabic-letter-table">
+                        <h4 class="text-xl font-bold mb-3 text-primary">The Arabic Letters</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+                            <div class="bg-gray-50 p-4 text-center">
+                                <p class="font-arabic text-4xl text-black mb-2">ا</p>
+                                <p class="text-gray-600">Alif</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 text-center">
+                                <p class="font-arabic text-4xl text-black mb-2">ب</p>
+                                <p class="text-gray-600">Baa</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 text-center">
+                                <p class="font-arabic text-4xl text-black mb-2">ت</p>
+                                <p class="text-gray-600">Taa</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 text-center">
+                                <p class="font-arabic text-4xl text-black mb-2">ث</p>
+                                <p class="text-gray-600">Thaa</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 text-center">
+                                <p class="font-arabic text-4xl text-black mb-2">ج</p>
+                                <p class="text-gray-600">Jim</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 text-center">
+                                <p class="font-arabic text-4xl text-black mb-2">ح</p>
+                                <p class="text-gray-600">Ha</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 text-center">
+                                <p class="font-arabic text-4xl text-black mb-2">خ</p>
+                                <p class="text-gray-600">Kha</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 text-center">
+                                <p class="font-arabic text-4xl text-black mb-2">د</p>
+                                <p class="text-gray-600">Dal</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 text-center">
+                                <p class="font-arabic text-4xl text-black mb-2">ذ</p>
+                                <p class="text-gray-600">Dhal</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 text-center">
+                                <p class="font-arabic text-4xl text-black mb-2">ر</p>
+                                <p class="text-gray-600">Ra</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 text-center">
+                                <p class="font-arabic text-4xl text-black mb-2">ز</p>
+                                <p class="text-gray-600">Zay</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 text-center">
+                                <p class="font-arabic text-4xl text-black mb-2">س</p>
+                                <p class="text-gray-600">Sin</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 text-center">
+                                <p class="font-arabic text-4xl text-black mb-2">ش</p>
+                                <p class="text-gray-600">Shin</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 text-center">
+                                <p class="font-arabic text-4xl text-black mb-2">ص</p>
+                                <p class="text-gray-600">Sad</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 text-center">
+                                <p class="font-arabic text-4xl text-black mb-2">ض</p>
+                                <p class="text-gray-600">Dad</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 text-center">
+                                <p class="font-arabic text-4xl text-black mb-2">ط</p>
+                                <p class="text-gray-600">Tah</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 text-center">
+                                <p class="font-arabic text-4xl text-black mb-2">ظ</p>
+                                <p class="text-gray-600">Zah</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 text-center">
+                                <p class="font-arabic text-4xl text-black mb-2">ع</p>
+                                <p class="text-gray-600">Ayn</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 text-center">
+                                <p class="font-arabic text-4xl text-black mb-2">غ</p>
+                                <p class="text-gray-600">Ghayn</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 text-center">
+                                <p class="font-arabic text-4xl text-black mb-2">ف</p>
+                                <p class="text-gray-600">Fa</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 text-center">
+                                <p class="font-arabic text-4xl text-black mb-2">ق</p>
+                                <p class="text-gray-600">Qaf</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 text-center">
+                                <p class="font-arabic text-4xl text-black mb-2">ك</p>
+                                <p class="text-gray-600">Kaf</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 text-center">
+                                <p class="font-arabic text-4xl text-black mb-2">ل</p>
+                                <p class="text-gray-600">Lam</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 text-center">
+                                <p class="font-arabic text-4xl text-black mb-2">م</p>
+                                <p class="text-gray-600">Mim</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 text-center">
+                                <p class="font-arabic text-4xl text-black mb-2">ن</p>
+                                <p class="text-gray-600">Nun</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 text-center">
+                                <p class="font-arabic text-4xl text-black mb-2">ه</p>
+                                <p class="text-gray-600">Ha</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 text-center">
+                                <p class="font-arabic text-4xl text-black mb-2">و</p>
+                                <p class="text-gray-600">Waw</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 text-center">
+                                <p class="font-arabic text-4xl text-black mb-2">ي</p>
+                                <p class="text-gray-600">Yaa</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lesson 2 -->
+    <section id="lesson2" class="py-8 bg-white" data-scroll-section>
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white p-8 border border-gray-100 shadow-md mb-8">
+                        <div class="mb-8">
+                            <h3 class="text-2xl font-bold mb-4 text-primary">Lesson 2: Types of Arabic Letters: Shamsi (Sun letters) and Qamari (Moon letters)</h3>
+                            <p class="text-gray-700 mb-4">
+                                In Arabic, letters are divided into two types:
+                            </p>
+                            <ol class="list-decimal list-inside mb-4 text-gray-700 space-y-2">
+                                <li class="font-medium">Shamsi Letters (<span class="font-arabic text-black">حُرُوفٌ شَمْسِيَّةٌ</span>)</li>
+                                <li class="font-medium">Qamari Letters (<span class="font-arabic text-black">حُرُوفٌ قَمَرِيَّةٌ</span>)</li>
+                            </ol>
+                            <p class="text-gray-700 mb-4">
+                                These two types help us understand how to say the word "<span class="font-arabic text-black">ال</span>" (al) when it comes before a noun.
+                                Sometimes the "<span class="font-arabic text-black">ل</span>" in "<span class="font-arabic text-black">ال</span>" is silent. Sometimes it's spoken clearly. Let's look at both types with examples.
+                            </p>
+                        </div>
+
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold mb-3 text-primary flex items-center">
+                                <span class="text-2xl mr-2">☀️</span> Shamsi Letters (<span class="font-arabic">حُرُوفٌ شَمْسِيَّةٌ</span>)
+                            </h4>
+                            <p class="text-gray-700 mb-4">
+                                With shamsi letters, the "<span class="font-arabic text-black">ل</span>" in "<span class="font-arabic text-black">ال</span>" is not pronounced. The first letter of the word becomes stronger (we double it when speaking).
+                            </p>
+
+                            <div class="bg-gray-50 p-6 rounded-sm mb-6">
+                                <h5 class="font-bold text-gray-800 mb-3">The 14 Shamsi Letters:</h5>
+                                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-4">
+                                    <div class="bg-white p-3 text-center shadow-sm">
+                                        <p class="font-arabic text-3xl text-red-600 mb-1">ت</p>
+                                        <p class="text-gray-600">ت (tā')</p>
+                                    </div>
+                                    <div class="bg-white p-3 text-center shadow-sm">
+                                        <p class="font-arabic text-3xl text-red-600 mb-1">ث</p>
+                                        <p class="text-gray-600">ث (thā')</p>
+                                    </div>
+                                    <div class="bg-white p-3 text-center shadow-sm">
+                                        <p class="font-arabic text-3xl text-red-600 mb-1">د</p>
+                                        <p class="text-gray-600">د (dāl)</p>
+                                    </div>
+                                    <div class="bg-white p-3 text-center shadow-sm">
+                                        <p class="font-arabic text-3xl text-red-600 mb-1">ذ</p>
+                                        <p class="text-gray-600">ذ (dhāl)</p>
+                                    </div>
+                                    <div class="bg-white p-3 text-center shadow-sm">
+                                        <p class="font-arabic text-3xl text-red-600 mb-1">ر</p>
+                                        <p class="text-gray-600">ر (rā')</p>
+                                    </div>
+                                    <div class="bg-white p-3 text-center shadow-sm">
+                                        <p class="font-arabic text-3xl text-red-600 mb-1">ز</p>
+                                        <p class="text-gray-600">ز (zāy)</p>
+                                    </div>
+                                    <div class="bg-white p-3 text-center shadow-sm">
+                                        <p class="font-arabic text-3xl text-red-600 mb-1">س</p>
+                                        <p class="text-gray-600">س (sīn)</p>
+                                    </div>
+                                    <div class="bg-white p-3 text-center shadow-sm">
+                                        <p class="font-arabic text-3xl text-red-600 mb-1">ش</p>
+                                        <p class="text-gray-600">ش (shīn)</p>
+                                    </div>
+                                    <div class="bg-white p-3 text-center shadow-sm">
+                                        <p class="font-arabic text-3xl text-red-600 mb-1">ص</p>
+                                        <p class="text-gray-600">ص (ṣād)</p>
+                                    </div>
+                                    <div class="bg-white p-3 text-center shadow-sm">
+                                        <p class="font-arabic text-3xl text-red-600 mb-1">ض</p>
+                                        <p class="text-gray-600">ض (ḍād)</p>
+                                    </div>
+                                    <div class="bg-white p-3 text-center shadow-sm">
+                                        <p class="font-arabic text-3xl text-red-600 mb-1">ط</p>
+                                        <p class="text-gray-600">ط (ṭā')</p>
+                                    </div>
+                                    <div class="bg-white p-3 text-center shadow-sm">
+                                        <p class="font-arabic text-3xl text-red-600 mb-1">ظ</p>
+                                        <p class="text-gray-600">ظ (ẓā')</p>
+                                    </div>
+                                    <div class="bg-white p-3 text-center shadow-sm">
+                                        <p class="font-arabic text-3xl text-red-600 mb-1">ل</p>
+                                        <p class="text-gray-600">ل (lām)</p>
+                                    </div>
+                                    <div class="bg-white p-3 text-center shadow-sm">
+                                        <p class="font-arabic text-3xl text-red-600 mb-1">ن</p>
+                                        <p class="text-gray-600">ن (nūn)</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h5 class="font-bold text-gray-800 mb-3">Examples:</h5>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
+                                <div class="bg-gray-50 p-4 rounded-sm">
+                                    <p class="font-arabic text-2xl text-black text-right mb-2">الشَّمْس</p>
+                                    <p class="text-gray-600">ash-shams (the sun)</p>
+                                    <p class="text-gray-700 mt-2">The "ل" is silent, and we double the "ش"</p>
+                                </div>
+                                <div class="bg-gray-50 p-4 rounded-sm">
+                                    <p class="font-arabic text-2xl text-black text-right mb-2">النَّاس</p>
+                                    <p class="text-gray-600">an-nās (the people)</p>
+                                    <p class="text-gray-700 mt-2">The "ل" is silent, and we double the "ن"</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold mb-3 text-primary flex items-center">
+                                <span class="text-2xl mr-2">🌙</span> Qamari Letters (<span class="font-arabic">حُرُوفٌ قَمَرِيَّةٌ</span>)
+                            </h4>
+                            <p class="text-gray-700 mb-4">
+                                With qamari letters, the "<span class="font-arabic text-black">ل</span>" in "<span class="font-arabic text-black">ال</span>" is clearly pronounced.
+                            </p>
+
+                            <div class="bg-gray-50 p-6 rounded-sm mb-6">
+                                <h5 class="font-bold text-gray-800 mb-3">The 14 Qamari Letters:</h5>
+                                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-4">
+                                    <div class="bg-white p-3 text-center shadow-sm">
+                                        <p class="font-arabic text-3xl text-red-600 mb-1">ا</p>
+                                        <p class="text-gray-600">ا ('alif)</p>
+                                    </div>
+                                    <div class="bg-white p-3 text-center shadow-sm">
+                                        <p class="font-arabic text-3xl text-red-600 mb-1">ب</p>
+                                        <p class="text-gray-600">ب (bā')</p>
+                                    </div>
+                                    <div class="bg-white p-3 text-center shadow-sm">
+                                        <p class="font-arabic text-3xl text-red-600 mb-1">ج</p>
+                                        <p class="text-gray-600">ج (jīm)</p>
+                                    </div>
+                                    <div class="bg-white p-3 text-center shadow-sm">
+                                        <p class="font-arabic text-3xl text-red-600 mb-1">ح</p>
+                                        <p class="text-gray-600">ح (ḥā')</p>
+                                    </div>
+                                    <div class="bg-white p-3 text-center shadow-sm">
+                                        <p class="font-arabic text-3xl text-red-600 mb-1">خ</p>
+                                        <p class="text-gray-600">خ (khā')</p>
+                                    </div>
+                                    <div class="bg-white p-3 text-center shadow-sm">
+                                        <p class="font-arabic text-3xl text-red-600 mb-1">ع</p>
+                                        <p class="text-gray-600">ع ('ayn)</p>
+                                    </div>
+                                    <div class="bg-white p-3 text-center shadow-sm">
+                                        <p class="font-arabic text-3xl text-red-600 mb-1">غ</p>
+                                        <p class="text-gray-600">غ (ghayn)</p>
+                                    </div>
+                                    <div class="bg-white p-3 text-center shadow-sm">
+                                        <p class="font-arabic text-3xl text-red-600 mb-1">ف</p>
+                                        <p class="text-gray-600">ف (fā')</p>
+                                    </div>
+                                    <div class="bg-white p-3 text-center shadow-sm">
+                                        <p class="font-arabic text-3xl text-red-600 mb-1">ق</p>
+                                        <p class="text-gray-600">ق (qāf)</p>
+                                    </div>
+                                    <div class="bg-white p-3 text-center shadow-sm">
+                                        <p class="font-arabic text-3xl text-red-600 mb-1">ك</p>
+                                        <p class="text-gray-600">ك (kāf)</p>
+                                    </div>
+                                    <div class="bg-white p-3 text-center shadow-sm">
+                                        <p class="font-arabic text-3xl text-red-600 mb-1">م</p>
+                                        <p class="text-gray-600">م (mīm)</p>
+                                    </div>
+                                    <div class="bg-white p-3 text-center shadow-sm">
+                                        <p class="font-arabic text-3xl text-red-600 mb-1">ه</p>
+                                        <p class="text-gray-600">ه (hā')</p>
+                                    </div>
+                                    <div class="bg-white p-3 text-center shadow-sm">
+                                        <p class="font-arabic text-3xl text-red-600 mb-1">و</p>
+                                        <p class="text-gray-600">و (wāw)</p>
+                                    </div>
+                                    <div class="bg-white p-3 text-center shadow-sm">
+                                        <p class="font-arabic text-3xl text-red-600 mb-1">ي</p>
+                                        <p class="text-gray-600">ي (yā')</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h5 class="font-bold text-gray-800 mb-3">Examples:</h5>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
+                                <div class="bg-gray-50 p-4 rounded-sm">
+                                    <p class="font-arabic text-2xl text-black text-right mb-2">القَمَر</p>
+                                    <p class="text-gray-600">al-qamar (the moon)</p>
+                                    <p class="text-gray-700 mt-2">The "ل" is clearly pronounced</p>
+                                </div>
+                                <div class="bg-gray-50 p-4 rounded-sm">
+                                    <p class="font-arabic text-2xl text-black text-right mb-2">الكِتَاب</p>
+                                    <p class="text-gray-600">al-kitāb (the book)</p>
+                                    <p class="text-gray-700 mt-2">The "ل" is clearly pronounced</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="bg-primary text-white hover:bg-primary/90 px-6 py-3 font-medium inline-flex items-center transition-all duration-300">
+                            Next Lesson
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark/95 shadow-md text-white -mt-1">
+        <div class="container mx-auto px-4 py-10">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <!-- Logo -->
+                <div class="mb-6 md:mb-0">
+                    <a href="index.html" class="text-2xl font-arabic font-bold">
+                        <span class="text-primary">Nur</span>
+                        <span class="text-white">Al-Hikma</span>
+                    </a>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="flex flex-wrap justify-center gap-8 mb-6 md:mb-0">
+                    <a href="index.html" class="text-white font-medium hover:text-primary transition">Home</a>
+                    <a href="stories.html" class="text-white font-medium hover:text-primary transition">Islamic Stories</a>
+                    <a href="resources.html" class="text-white font-medium hover:text-primary transition">Resources</a>
+                    <a href="arabic-grammar.html" class="text-white font-medium hover:text-primary transition">Arabic Grammar</a>
+                    <a href="about.html" class="text-white font-medium hover:text-primary transition">About Us</a>
+                </div>
+
+                <!-- Social Media -->
+                <div class="flex space-x-4">
+                    <a href="#" class="text-white/70 hover:text-primary transition-all duration-300">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-white/70 hover:text-primary transition-all duration-300">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-white/70 hover:text-primary transition-all duration-300">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-white/70 hover:text-primary transition-all duration-300">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 mt-8 pt-6">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-white/70 text-sm">&copy; 2023 Nur Al-Hikma Islamic Resources. All rights reserved.</p>
+                    <div class="mt-4 md:mt-0">
+                        <ul class="flex space-x-6 text-sm">
+                            <li><a href="#" class="text-white/70 hover:text-primary transition">Privacy</a></li>
+                            <li><a href="#" class="text-white/70 hover:text-primary transition">Terms</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    </div>
+</body>
+</html>

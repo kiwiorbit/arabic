@@ -1,0 +1,20 @@
+Placeholder for hero background image.
+
+Please replace this with an actual image file (jpg, png, or webp format) named "hero-background.jpg" or similar.
+
+Recommended image specifications:
+- Resolution: At least 1920x1080 pixels
+- Format: JPG or WebP for better compression
+- Content: Consider images like:
+  * A beautiful mosque interior with soft lighting
+  * Islamic geometric patterns
+  * Muslim families engaged in learning
+  * Quran with soft lighting
+  * Islamic calligraphy or architecture
+
+Make sure you have the rights to use the image you choose.
+
+Free image resources:
+- Unsplash (https://unsplash.com/s/photos/islamic)
+- Pexels (https://www.pexels.com/search/islamic/)
+- Pixabay (https://pixabay.com/images/search/islamic/)
