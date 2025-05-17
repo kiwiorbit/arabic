@@ -129,3 +129,71 @@ In the Quran, Allah tells us the remarkable story of a group of young believers 
 This story teaches us about unwavering faith in the face of challenges, the importance of seeking refuge with Allah, and divine protection for those who believe...
 
 Read Full Story
+
+
+
+
+memories 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# UI Styling
+- User prefers center-aligned hero content.
+- User prefers dark mode navbar.
+- User prefers sticky navbar to fix white line issues between sections.
+- User prefers buttons to have equal width in UI elements.
+- User prefers mobile menus to be full-view with centered navigation links and adequate spacing between items.
+- User prefers centered content in UI elements.
+- User prefers to keep the 'Explore Our Resources' section with a white background.
+- User prefers not to use pattern backgrounds in the website.
+- User prefers not to have rounded border radius on any elements except icons in the website.
+- User prefers the footer to match the navbar style for design consistency.
+- User wants registration forms to maintain consistent color themes with the website.
+- User prefers Arabic letter displays to have at least 4 letters per row in UI elements.
+- User prefers centered elements on smaller screens, specifically the 'learn more' button in the mission section and the 'rights reserved' paragraph in the footer.
+- User prefers mission statement heading to be centered on smaller screens.
+- User prefers to include Arabic translations under English headings in the UI.
+
+# Webpage Functionality
+- User is interested in implementing Locomotive Scroll for smooth scrolling on webpages.
+- User prefers not to have parallax effects on headings and content.
+- User is interested in implementing a loading page before showing the main content.
+- User prefers a book opening animation for the website loading page with a centered floating book icon (not flipping) and a progress bar that completes in exactly 5 seconds, without title/subtitle elements.
+- User prefers to keep Arabic text and 'opening the gates of knowledge' phrase in the loading page.
+- User prefers to remove core values from the 2nd section and wants a different design for that section.
+- User prefers the 3rd section to be in dark mode and focus on only 3 core values.
+- User prefers simpler footers with minimal information.
+- User prefers the footer to be exactly the same across all pages of the website for consistency.
+- User prefers the Arabic grammar page hero section to be minimalist and visually distinct from the index page.
+- User prefers not to include animation loaders on the Arabic grammar page.
+- User prefers to have individual course content on separate dedicated pages rather than combining multiple courses on separate dedicated pages.
+- User prefers each Arabic lesson to be in its own separate section on the website.
+- User prefers to include an 'Arabic Language Overview' section explaining Classical Arabic, Modern Standard Arabic, and Arabic Dialects, with emphasis on Quranic Arabic being the focus of the content.
+- User prefers FAQ accordion structure for lessons rather than tabs, with separate pages for different lesson categories.
+
+# Arabic Text Display Preferences
+- User prefers Arabic text of Quranic verses and hadiths to be displayed in bold.
+- User prefers Arabic text of Quranic verses and hadiths to be displayed in bold and centered on smaller screens, along with buttons.
+- User prefers Arabic text to be displayed with larger font size, black color, and right-aligned in containers.
+- User prefers Arabic text to be displayed under 'shamsi letters' rather than on the same line.
+- User prefers Arabic text in the website should always use font-bold class for better readability.
+
+# Animations
+- User prefers simple Tailwind animations like box shadow lift-up effects over staggered animations for cards.
+- User doesn't want animations on icons in the 'Explore Our Resources' section.
