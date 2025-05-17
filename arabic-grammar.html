@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arabic Grammar | Nur Al-Hikma</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Locomotive Scroll CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#91b250',
+                        secondary: '#606060',
+                        light: '#F9F7F3',
+                        dark: '#101010'
+                    },
+                    fontFamily: {
+                        arabic: ['Amiri', 'serif'],
+                        sans: ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-black font-sans text-dark">
+    <div id="main-content" data-scroll-container>
+    <!-- Header with Navigation -->
+    <header class="bg-dark/95 shadow-md fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 py-3">
+            <nav class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-arabic font-bold">
+                        <span class="text-primary">Nur</span>
+                        <span class="text-white">Al-Hikma</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-white font-medium hover:text-primary transition">Home</a>
+                    <a href="resources.html" class="text-white font-medium hover:text-primary transition">Resources</a>
+                    <a href="arabic-grammar.html" class="text-primary font-medium hover:text-white transition">Learn Arabic</a>
+                    <a href="#register" class="border border-primary px-6 py-2 text-white font-medium hover:text-primary transition flex items-center justify-center">Register Now</a>
+                </div>
+
+                <!-- Mobile Navigation Toggle -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white hover:text-primary">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </nav>
+
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="md:hidden hidden fixed inset-0 bg-dark bg-opacity-95 z-50">
+                <!-- Close button -->
+                <button id="mobile-menu-close" class="absolute top-6 right-6 text-white hover:text-primary">
+                    <i class="fas fa-times text-2xl"></i>
+                </button>
+
+                <!-- Menu content -->
+                <div class="flex flex-col items-center justify-center h-full w-full">
+                    <div class="flex flex-col items-center space-y-10 py-8">
+                        <a href="index.html" class="text-white text-2xl font-medium hover:text-primary transition">Home</a>
+                        <a href="resources.html" class="text-white text-2xl font-medium hover:text-primary transition">Resources</a>
+                        <a href="arabic-grammar.html" class="text-primary text-2xl font-medium hover:text-white transition">Learn Arabic</a>
+                        <a href="#register" class="text-white text-2xl font-medium hover:text-primary transition">Register Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section - Ultra Minimalist Design -->
+    <section class="bg-primary pt-32 pb-20" data-scroll-section>
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col items-center justify-center text-center">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-2 text-white leading-tight">
+                    Arabic with Ease
+                </h1>
+                <p class="font-arabic text-5xl font-bold text-black mb-4 text-center">العربية بسهولة</p>
+                <div class="w-24 h-1 bg-white mb-8"></div>
+                <p class="text-xl text-white/80 max-w-2xl">
+                    Structured learning paths to help you understand the language of the Quran through its fundamental components: Ism, Fi'l, and Harf.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section id="introduction" class="relative overflow-hidden py-24 bg-white -mt-1" data-scroll-section>
+        <!-- Background with subtle pattern -->
+        <div class="absolute inset-0 w-full h-full">
+            <div class="absolute inset-0 bg-gray-50"></div>
+            <!-- Pattern overlay -->
+            <div class="absolute inset-0 pattern-bg opacity-5"></div>
+        </div>
+
+        <!-- Content Container -->
+        <div class="relative container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <!-- Left side - Large Text -->
+                <div class="md:w-1/4">
+                    <div class="text-left">
+                        <h2 class="text-6xl font-bold text-gray-800 mb-4">WHY<br>LEARN<br>ARABIC?</h2>
+                        <div class="line w-32 h-2 bg-primary mb-6"></div>
+                    </div>
+                </div>
+
+                <!-- Right side - Mission Text -->
+                <div class="md:w-3/4">
+                    <h3 class="text-3xl font-bold text-gray-700 mb-6 text-center sm:text-left">Understanding Arabic grammar is essential for engaging deeply with the Quran</h3>
+                    <p class="text-gray-600 text-lg mb-6">
+                        The Arabic language has a rich structure that conveys meaning not just through words, but through grammatical patterns that reveal subtle nuances and profound insights.
+                    </p>
+                    <div class="quote-box mb-8 border-l-4 border-primary pl-4">
+                        <div class="mb-6">
+                            <p class="font-arabic font-bold text-2xl md:text-3xl text-black text-right mb-3">خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ</p>
+                            <p class="text-gray-600 text-lg italic text-center sm:text-left">
+                                "The best among you are those who learn the Quran and teach it." - Sahih al-Bukhari
+                            </p>
+                        </div>
+                        <div class="mt-8">
+                            <p class="font-arabic font-bold text-2xl md:text-3xl text-black text-right mb-3">إِنَّا أَنزَلْنَاهُ قُرْآنًا عَرَبِيًّا لَّعَلَّكُمْ تَعْقِلُونَ</p>
+                            <p class="text-gray-600 text-lg italic text-center sm:text-left">
+                                "Indeed, We have sent it down as an Arabic Quran that you might understand." - Quran 12:2
+                            </p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-lg mb-8">
+                        Our Arabic grammar resources are designed to make learning accessible to everyone, from beginners to advanced students. Learning Arabic grammar offers numerous benefits:
+                    </p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                        <div class="bg-white p-6 border border-gray-100 shadow-md">
+                            <h3 class="text-xl font-bold mb-3 text-primary">Enhanced Comprehension</h3>
+                            <p class="text-gray-600">Gain deeper understanding of Quranic verses and Islamic texts in their original form without relying on translations.</p>
+                        </div>
+                        <div class="bg-white p-6 border border-gray-100 shadow-md">
+                            <h3 class="text-xl font-bold mb-3 text-primary">Spiritual Connection</h3>
+                            <p class="text-gray-600">Develop a more profound connection with your faith through direct engagement with sacred texts in their authentic language.</p>
+                        </div>
+                        <div class="bg-white p-6 border border-gray-100 shadow-md">
+                            <h3 class="text-xl font-bold mb-3 text-primary">Intellectual Growth</h3>
+                            <p class="text-gray-600">Strengthen critical thinking and analytical skills while exploring the rich linguistic traditions of classical Arabic.</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center sm:justify-start">
+                        <a href="#courses" class="bg-primary text-white hover:bg-primary/90 px-8 py-3 font-medium inline-flex items-center transition-all duration-300">
+                            Start Learning
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Structure -->
+    <section id="courses" class="py-20 bg-gray -mt-1" data-scroll-section>
+        <div class="container mx-auto px-4">
+            <div class="mb-16 text-center">
+                <h2 class="text-4xl font-bold text-white">Our <span class="text-primary">Arabic Grammar</span> Courses</h2>
+                <div class="w-32 h-1 bg-primary mt-4 mb-6 mx-auto"></div>
+                <p class="text-white/80 mx-auto">Structured learning paths to help you master Quranic Arabic at your own pace.</p>
+            </div>
+
+            <div class="max-w-5xl mx-auto">
+                <!-- Beginner Course -->
+                <div class="bg-black p-8 border border-white/50 hover:border-primary transition-all duration-300 mb-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mr-4">
+                            <i class="fas fa-book-open text-primary text-2xl"></i>
+                        </div>
+                        <h2 class="text-5xl font-bold text-gray-500">01</h2>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">Beginner's Arabic Grammar</h3>
+                    <p class="text-white/70 mb-6">Start your journey with the fundamentals of Arabic grammar. This course covers basic concepts and builds a solid foundation for further learning.</p>
+
+                    <div class="space-y-4 mb-6">
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-primary/20 flex items-center justify-center mr-4">
+                                <span class="text-primary font-bold">1</span>
+                            </div>
+                            <a href="beginner.html" class="text-white/80 hover:text-primary">Introduction to Arabic Letters and Sounds</a>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-primary/20 flex items-center justify-center mr-4">
+                                <span class="text-primary font-bold">2</span>
+                            </div>
+                            <span class="text-white/80">Basic Sentence Structure</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-primary/20 flex items-center justify-center mr-4">
+                                <span class="text-primary font-bold">3</span>
+                            </div>
+                            <span class="text-white/80">Introduction to Ism (Nouns)</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-primary/20 flex items-center justify-center mr-4">
+                                <span class="text-primary font-bold">4</span>
+                            </div>
+                            <span class="text-white/80">Introduction to Fi'l (Verbs)</span>
+                        </div>
+                    </div>
+
+                    <a href="beginner.html" class="text-primary hover:text-white flex items-center group">
+                        <span>Start Learning</span>
+                        <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+
+                <!-- Intermediate Course -->
+                <div class="bg-black p-8 border border-white/50 hover:border-primary transition-all duration-300 mb-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mr-4">
+                            <i class="fas fa-comments text-primary text-2xl"></i>
+                        </div>
+                        <h2 class="text-5xl font-bold text-gray-500">02</h2>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">Intermediate Arabic Grammar</h3>
+                    <p class="text-white/70 mb-6">Deepen your understanding of Arabic grammar with more complex structures and detailed analysis of the three components.</p>
+
+                    <div class="space-y-4 mb-6">
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-primary/20 flex items-center justify-center mr-4">
+                                <span class="text-primary font-bold">1</span>
+                            </div>
+                            <span class="text-white/80">Advanced Noun Forms and Cases</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-primary/20 flex items-center justify-center mr-4">
+                                <span class="text-primary font-bold">2</span>
+                            </div>
+                            <span class="text-white/80">Verb Conjugation and Tenses</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-primary/20 flex items-center justify-center mr-4">
+                                <span class="text-primary font-bold">3</span>
+                            </div>
+                            <span class="text-white/80">Common Particles and Their Usage</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-primary/20 flex items-center justify-center mr-4">
+                                <span class="text-primary font-bold">4</span>
+                            </div>
+                            <span class="text-white/80">Sentence Analysis and Construction</span>
+                        </div>
+                    </div>
+
+                    <a href="#" class="text-primary hover:text-white flex items-center group">
+                        <span>Explore Course</span>
+                        <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+
+                <!-- Advanced Course -->
+                <div class="bg-black p-8 border border-white/50 hover:border-primary transition-all duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mr-4">
+                            <i class="fas fa-graduation-cap text-primary text-2xl"></i>
+                        </div>
+                        <h2 class="text-5xl font-bold text-gray-500">03</h2>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">Advanced Quranic Arabic</h3>
+                    <p class="text-white/70 mb-6">Master the intricacies of Quranic Arabic with in-depth analysis of grammatical structures found in the Quran.</p>
+
+                    <div class="space-y-4 mb-6">
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-primary/20 flex items-center justify-center mr-4">
+                                <span class="text-primary font-bold">1</span>
+                            </div>
+                            <span class="text-white/80">Quranic Vocabulary and Expressions</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-primary/20 flex items-center justify-center mr-4">
+                                <span class="text-primary font-bold">2</span>
+                            </div>
+                            <span class="text-white/80">Rhetorical Devices in the Quran</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-primary/20 flex items-center justify-center mr-4">
+                                <span class="text-primary font-bold">3</span>
+                            </div>
+                            <span class="text-white/80">Complex Grammatical Structures</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-primary/20 flex items-center justify-center mr-4">
+                                <span class="text-primary font-bold">4</span>
+                            </div>
+                            <span class="text-white/80">Tafsir and Grammatical Analysis</span>
+                        </div>
+                    </div>
+
+                    <a href="#" class="text-primary hover:text-white flex items-center group">
+                        <span>Discover Advanced Topics</span>
+                        <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Arabic Language Overview -->
+    <section class="py-20 bg-white" data-scroll-section>
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4">Arabic Language Overview</h2>
+                    <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                    <p class="text-gray-600 text-lg max-w-3xl mx-auto">
+                        Arabic is a Semitic language spoken by over 400 million people across the Middle East, North Africa, and parts of East Africa. It has a rich history and plays a central role in Islamic culture, being the language of the Qur'an.
+                    </p>
+                </div>
+
+                <!-- Classical Arabic -->
+                <div class="bg-gray-50 p-8 mb-8 border-l-4 border-primary">
+                    <div class="flex flex-col md:flex-row items-start gap-6">
+                        <div class="md:w-1/3">
+                            <h3 class="text-2xl font-bold text-primary mb-2">Classical Arabic</h3>
+                            <p class="font-arabic text-3xl text-black font-bold mb-2">الْعَرَبِيَّةُ الْكْلَاسِيكِيَّةُ</p>
+                        </div>
+                        <div class="md:w-2/3">
+                            <div class="mb-4">
+                                <h4 class="text-lg font-bold text-gray-700 mb-2">What it is:</h4>
+                                <p class="text-gray-600">Classical Arabic is the original, ancient form of the Arabic language found in the Qur'an, early Islamic texts, classical poetry, and literature.</p>
+                            </div>
+                            <div class="mb-4">
+                                <h4 class="text-lg font-bold text-gray-700 mb-2">Where it is used:</h4>
+                                <p class="text-gray-600">In religious contexts (Qur'an, Hadith, Islamic scholarship), traditional literature, and classical poetry. It is studied in religious schools and by scholars of Arabic.</p>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-gray-700 mb-2">Why it is important:</h4>
+                                <p class="text-gray-600">It is the foundation of all Arabic language forms, respected for its eloquence and precision, and remains essential for understanding Islamic texts and classical works.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modern Standard Arabic -->
+                <div class="bg-gray-50 p-8 mb-8 border-l-4 border-primary">
+                    <div class="flex flex-col md:flex-row items-start gap-6">
+                        <div class="md:w-1/3">
+                            <h3 class="text-2xl font-bold text-primary mb-2">Modern Standard Arabic (MSA)</h3>
+                            <p class="font-arabic text-3xl text-black font-bold mb-2">الْفُصْحَىٰ</p>
+                        </div>
+                        <div class="md:w-2/3">
+                            <div class="mb-4">
+                                <h4 class="text-lg font-bold text-gray-700 mb-2">What it is:</h4>
+                                <p class="text-gray-600">MSA is the modern form of Classical Arabic used in writing, news media, official speeches, books, and formal communication.</p>
+                            </div>
+                            <div class="mb-4">
+                                <h4 class="text-lg font-bold text-gray-700 mb-2">Where it is used:</h4>
+                                <p class="text-gray-600">Across the Arab world in newspapers, TV broadcasts, political speeches, schools, and formal settings.</p>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-gray-700 mb-2">Why it is important:</h4>
+                                <p class="text-gray-600">It serves as a unifying language across all Arabic-speaking countries, as this form helps everyone understand each other, even though they speak different local versions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Arabic Dialects -->
+                <div class="bg-gray-50 p-8 mb-8 border-l-4 border-primary">
+                    <div class="flex flex-col md:flex-row items-start gap-6">
+                        <div class="md:w-1/3">
+                            <h3 class="text-2xl font-bold text-primary mb-2">Arabic Dialects</h3>
+                            <p class="font-arabic text-3xl text-black font-bold mb-2">الْعَامِّيَّةُ</p>
+                        </div>
+                        <div class="md:w-2/3">
+                            <div class="mb-4">
+                                <h4 class="text-lg font-bold text-gray-700 mb-2">What it is:</h4>
+                                <p class="text-gray-600">Āmmiyya refers to the regional spoken varieties of Arabic that differ from Modern Standard Arabic and Classical Arabic. Each country has its own version.</p>
+                            </div>
+                            <div class="mb-4">
+                                <h4 class="text-lg font-bold text-gray-700 mb-2">Where it is used:</h4>
+                                <p class="text-gray-600">In everyday conversations, homes, markets, and informal communication across the Arab world.</p>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-gray-700 mb-2">Why it is important:</h4>
+                                <p class="text-gray-600">Dialects are the real-life spoken language of Arabic speakers and reflect local culture, identity, and history. While they are not used in formal writing, they are essential for understanding native speakers and daily life.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Note Box -->
+                <div class="bg-primary/10 p-8 border-l-4 border-primary">
+                    <h3 class="text-xl font-bold text-primary mb-4">Note:</h3>
+                    <p class="text-gray-700">
+                        The scope of this book is Quranic Arabic. Our focus will be on learning Arabic grammar specifically to understand the language of the Qur'an. We will study the structure, vocabulary, and grammar rules found in Classical Arabic as used in the Qur'anic text.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark/95 shadow-md text-white -mt-1">
+        <div class="container mx-auto px-4 py-10">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <!-- Logo -->
+                <div class="mb-6 md:mb-0">
+                    <a href="index.html" class="text-2xl font-arabic font-bold">
+                        <span class="text-primary">Nur</span>
+                        <span class="text-white">Al-Hikma</span>
+                    </a>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="flex flex-wrap justify-center gap-8 mb-6 md:mb-0">
+                    <a href="index.html" class="text-white font-medium hover:text-primary transition">Home</a>
+                    <a href="stories.html" class="text-white font-medium hover:text-primary transition">Islamic Stories</a>
+                    <a href="resources.html" class="text-white font-medium hover:text-primary transition">Resources</a>
+                    <a href="arabic-grammar.html" class="text-white font-medium hover:text-primary transition">Arabic Grammar</a>
+                    <a href="about.html" class="text-white font-medium hover:text-primary transition">About Us</a>
+                </div>
+
+                <!-- Social Media -->
+                <div class="flex space-x-4">
+                    <a href="#" class="text-white/70 hover:text-primary transition-all duration-300">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-white/70 hover:text-primary transition-all duration-300">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-white/70 hover:text-primary transition-all duration-300">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-white/70 hover:text-primary transition-all duration-300">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 mt-8 pt-6">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-white/70 text-sm">&copy; 2023 Nur Al-Hikma Islamic Resources. All rights reserved.</p>
+                    <div class="mt-4 md:mt-0">
+                        <ul class="flex space-x-6 text-sm">
+                            <li><a href="#" class="text-white/70 hover:text-primary transition">Privacy</a></li>
+                            <li><a href="#" class="text-white/70 hover:text-primary transition">Terms</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
